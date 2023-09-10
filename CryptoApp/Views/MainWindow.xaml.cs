@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using CryptoApp.ViewModels;
+using System.Windows;
 
 namespace CryptoApp
 {
@@ -10,6 +11,7 @@ namespace CryptoApp
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
     }
 }
